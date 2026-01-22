@@ -88,6 +88,8 @@ read_xdc {{C:/USAFA/Spring 2026/ECE281/ece281-ice2/src/Basys3_Master.xdc}}
 set_property used_in_implementation false [get_files {{C:/USAFA/Spring 2026/ECE281/ece281-ice2/src/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/USAFA/Spring 2026/ECE281/ece281-ice2/halfAdder.srcs/utils_1/imports/synth_1/halfAdder.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
